@@ -13,7 +13,8 @@ Install kexecboot on the device:
 3. fastboot reboot bootloader
 4. fastboot flash bpsw current/droid4-kexecboot.img
 5. boot the device to android
-6. run install.sh as root
+6. enable usb debugging in settings and connect usb cable
+7. run install.sh as root
 
 Uninstall:
 
