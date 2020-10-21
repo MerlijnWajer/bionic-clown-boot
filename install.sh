@@ -3,7 +3,7 @@
 echo installing kexec to kexecboot
 adb push scripts/kexebootstart.sh /sdcard
 adb push kexecboot /sdcard
-adb root/push busybox /sdcard
+adb push root/busybox /sdcard
 adb shell "su -c 'mount -o remount,rw /system'"
 adb shell "su -c 'cp -r /sdcard/kexecboot /system/etc/'"
 adb shell "su -c 'cp /system/xbin/true /system/bin/pvrsrvinit'"
