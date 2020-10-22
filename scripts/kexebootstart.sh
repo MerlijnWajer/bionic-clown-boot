@@ -15,6 +15,6 @@ $BBX insmod /arm_kexec.ko
 $BBX insmod /kexec.ko
 $BBX cp $BBX /
 /busybox umount -l /system
-/kexec -l /zImageStatic --dtb=/omap4-droid-bionic-xt875.dtb --command-line="console=ttyS2,115200 fbcon=rotate:1 earlycon rootwait rootfstype=ext2 root=/dev/mmcblk1p14 ro init=/sbin/preinit.sh quiet"
+/kexec -l /zImageStatic --dtb=/omap4-droid-bionic-xt875.dtb --command-line="console=ttyS2,115200 debug earlycon rootwait rootfstype=ext2 root=/dev/mmcblk1p14 ro init=/sbin/preinit.sh earlyprintk"
 /busybox sleep 1
 /kexec -e
