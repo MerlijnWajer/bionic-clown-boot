@@ -1,15 +1,15 @@
-Things required to install kexecboot on bionic:
+Things required to install kexecboot on solana:
 
 1. https://github.com/tmlind/droid4-kexecboot
 2. fastboot installed and in $PATH
 3. adb installed an in $PATH
-4. firmware VRZ_XT875_6.7.246.XT875.Verizon.en.US_CFC_01.xml installed on the device
+4. firmware VRZ_XT862_5.5.1_84_D3G-66_M2-10_1FF_01a.xml installed on the device
    - if you have an older version please update to this version first
-   - if you have a newer version plese follow https://maedevu.maemo.org/images/bionic/README.txt instead
+   - if you have a newer version plese follow https://maedevu.maemo.org/images/solana/README.txt instead
 5. After installing kexecboot stock android can not be booted anymore, only mainline kernels and LinageOs will work!!
 6. All data currently on the device will be lost by this procedure!!
 
-Install kexecboot on the device with android 4.0.4 installed:
+Install kexecboot on the device with android 2.3.4 installed:
 
 1. Reset the device
   1. Boot the device with both vol-up and vol-down depressed
@@ -19,7 +19,7 @@ Install kexecboot on the device with android 4.0.4 installed:
   5. select wipe data/factory reset
 2. boot the device to android
 3. enable usb debugging in settings and connect usb cable
-4. run root404.sh as root
+4. run root234.sh as root
 5. wait for the device to boot to the android gui
 6. run install.sh as root
 7. enter fastboot mode (power on + vol-down)
@@ -33,7 +33,7 @@ Install kexecboot on the device with android 4.0.4 installed:
 
 Uninstall:
 
-1. grab VRZ_XT875_6.7.246.XT875.Verizon.en.US_CFC_01.xml.zip
+1. grab VRZ_XT862_5.5.1_84_D3G-66_M2-10_1FF_01a.xml
 2. extract
 3. fastboot flash system system.img
 
